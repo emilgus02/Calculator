@@ -5,8 +5,59 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calc"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Kalkylator" Height="450" Width="500">
     <Grid>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Name="Screen" Background="WhiteSmoke" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="4" Panel.ZIndex="1"/>
+        <TextBlock Background="DarkBlue" Grid.ColumnSpan="8" Grid.RowSpan="9"/>
+
+        <Button Name="Ce"  Click="Ce_Click" Content="Ce" FontSize="20" Grid.Column="2" Grid.Row="3"/>
+        <Button Name="Sqrt" Click="Sqrt_Click"  Content="√" FontSize="20" Grid.Column="3" Grid.Row="3"/>
+        <Button Name="Sqr" Click="Sqr_Click" Content="x^y" FontSize="20" Grid.Column="4" Grid.Row="3"/>
+        <Button Name="Div" Click="Div_Click" Content="➗" FontSize="20" Grid.Column="5" Grid.Row="3"/>
+
+        <Button Name="Seven" Click="Seven_Click"  Content="7" FontSize="20" Grid.Column="2" Grid.Row="4"/>
+        <Button Name="Eight" Click="Eight_Click"  Content="8" FontSize="20" Grid.Column="3" Grid.Row="4"/>
+        <Button Name="Nine"  Click="Nine_Click" Content="9" FontSize="20" Grid.Column="4" Grid.Row="4"/>
+        <Button Name="Multi" Click="Multi_Click"  Content="✖️" FontSize="20" Grid.Column="5" Grid.Row="4"/>
+        
+        <Button Name="Four" Click="Four_Click"  Content="4" FontSize="20" Grid.Column="2" Grid.Row="5"/>
+        <Button Name="Five" Click="Five_Click"  Content="5" FontSize="20" Grid.Column="3" Grid.Row="5"/>
+        <Button Name="Six"  Click="Six_Click" Content="6" FontSize="20" Grid.Column="4" Grid.Row="5"/>
+        <Button Name="Neg"  Click="Neg_Click" Content="➖" FontSize="20" Grid.Column="5" Grid.Row="5"/>
+        
+        <Button Name="One"   Click="One_Click" Content="1" FontSize="20" Grid.Column="2" Grid.Row="6"/>
+        <Button Name="Two"   Click="Two_Click" Content="2" FontSize="20" Grid.Column="3" Grid.Row="6"/>
+        <Button Name="Three" Click="Three_Click" Content="3" FontSize="20" Grid.Column="4" Grid.Row="6"/>
+        <Button Name="Plus"  Click="Plus_Click" Content="➕" FontSize="20" Grid.Column="5" Grid.Row="6"/>
+
+        <Button Name="Answer" Click="Answer_Click" Content="Answer" FontSize="20" Grid.Column="2" Grid.Row="7"/>
+        <Button Name="Zero" Click="Zero_Click"  Content="0" FontSize="20" Grid.Column="3" Grid.Row="7"/>
+        <Button Name="Com"  Click="Com_Click" Content="," FontSize="30" Grid.Column="4" Grid.Row="7"/>
+        <Button Name="Exe"  Click="Exe_Click" Content="Exe" FontSize="20" Grid.Column="5" Grid.Row="7"/>
+        
     </Grid>
 </Window>
